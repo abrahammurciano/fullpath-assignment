@@ -50,7 +50,7 @@ $ pytest tests.py
 
 The way the code works is as follows.
 
-* First, the paragraph is stripped of punctuation using a regular expression to find and replace anything that isn't a letter or a space.
+* First, the paragraph is stripped of punctuation using a regular expression to find and replace anything that isn't a letter or whitespace.
 * Then the paragraph is split on spaces into a list of words, and duplicates are removed. (Note, "The" and "the" are *not* considered the same. They will appear in the order that they first appeared in the input.)
 * Each word in the list is then converted into a tuple of indices matching each letter's position in the alphabet. For example, the word "hello" would become `(4, 23, 11, 11, 25)`.
 * The words are then sorted according to the order of the tuples. Python takes care of sorting the tuples.

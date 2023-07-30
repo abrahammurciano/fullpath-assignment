@@ -23,6 +23,10 @@ examples = [
         paragraph="Roads? Where we're going we don't need roads.",
         expected="going dont need Roads roads Where we were",
     ),
+    Example(
+        paragraph="Roads?\nWhere we're going\twe don't need roads.",
+        expected="going dont need Roads roads Where we were",
+    ),
 ]
 
 

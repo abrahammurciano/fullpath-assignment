@@ -17,7 +17,7 @@ def sort_paragraph(paragraph: str) -> str:
 def extract_words(paragraph: str) -> Iterable[str]:
     """Get all the words in the given paragraph without duplicates."""
     # Use dict.fromkeys to remove duplicates instead of set to preserve the order of duplicate words in different case. (e.g. "The" and "the")
-    return dict.fromkeys(re.sub(r"[^a-zA-Z ]", "", paragraph).split())
+    return dict.fromkeys(re.sub(r"[^a-zA-Z\s]", "", paragraph).split())
 
 
 def sort_words(words: Iterable[str], alphabet: str) -> Sequence[str]:
