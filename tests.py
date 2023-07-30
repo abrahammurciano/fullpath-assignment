@@ -27,6 +27,10 @@ examples = [
         paragraph="Roads?\nWhere we're going\twe don't need roads.",
         expected="going dont need Roads roads Where we were",
     ),
+    Example(
+        paragraph="It's working! It's working!",
+        expected="Its Its working working",
+    ),
 ]
 
 
